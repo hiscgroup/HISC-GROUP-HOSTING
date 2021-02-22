@@ -1,0 +1,16 @@
+function AddTextEntry(key, value)
+	Citizen.InvokeNative(GetHashKey("ADD_TEXT_ENTRY"), key, value)
+end
+
+Citizen.CreateThread(function()
+  AddTextEntry('FE_THDR_GTAO', 'APOCALYPSE RP Join our Discord Server: https://discord.gg/86HPfkU4kQ  ')
+  AddTextEntry('PM_PANE_LEAVE', 'Go back to the server list')
+  AddTextEntry('PM_PANE_QUIT', 'Leaving FiveM and returning to the desk')
+  AddTextEntry('PM_SCR_MAP', 'Map Of The City')
+  AddTextEntry('PM_SCR_GAM', 'Exit')
+  AddTextEntry('PM_SCR_INF', 'Logs')
+  AddTextEntry('PM_SCR_SET', 'Settings')
+  AddTextEntry('PM_SCR_STA', 'Status')
+  AddTextEntry('PM_SCR_GAL', 'Gallery')
+  AddTextEntry('PM_SCR_RPL', 'Editor')
+end)
